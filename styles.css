@@ -16,6 +16,10 @@ body {
     height: 300px;
 }
 
+.about-me {
+    font: italic bold 18px Arial;
+}
+
 .image {
     border-radius: 10%;
     border: 0.2rem solid ;
@@ -31,5 +35,9 @@ body {
 
   .section-1 {
       border-bottom: #008b8b solid 3px;
+  }
+
+  .main-1 {
+      padding: 10px;
   }
 
