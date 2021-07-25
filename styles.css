@@ -1,0 +1,43 @@
+.centr {
+    background-color: #b0c4de;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.head-1 {
+    background-color: #008b8b;
+    padding: 0;
+    width: 960px;
+    height: 300px;
+}
+
+.about-me {
+    font: italic bold 16px Arial;
+}
+
+.image {
+    border-radius: 10%;
+    border: 0.2rem solid ;
+    margin-right: 20px;
+    height: 200px;
+    float: left;
+   
+  }
+  
+  .h1-1 {
+      text-align: center;
+  }
+
+  .section-1 {
+      border-bottom: #008b8b solid 3px;
+  }
+
+  .main-1 {
+      padding: 10px;
+  }
+
+  .footer-1 {
+    background-color: #008b8b; 
+  }
+
