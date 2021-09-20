@@ -7,61 +7,104 @@
     <link rel="stylesheet" href="styles.css">
     
     <title>My CV</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <div class="centr">
-        <header class="head-1">
-            <h1 class="h1-1">Pavel Akulovich</h1>
-            <figure>
-                <img class="image" 
-                     src="images/DSC_5954.jpg" 
-                     alt="my foto">
-                <p class="about-me">I'm 34. In my life I tried different professions. A teacher, a seller, a wholesale manager for the last 8 years. I want to try something new. The IT sphere is interesting and multifaceted. I want to become a successful Front-end developer in the future.</p>
+        <header class="head">
+            <nav class="menu">
+                <ul class="ul-menu">
+                    <li><a class="menu-item" href="#Contacts">Contacts</a></li>
+                    <li><a class="menu-item" href="#Skills">Skills</a></li>
+                    <li><a class="menu-item" href="#Code Example">Code Example</a></li>
+                    <li><a class="menu-item" href="#Code Projects">Projects</a></li>
+                    <li><a class="menu-item" href="#Education">Education</a></li>
+                    <li><a class="menu-item" href="#Languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <aside class="aside">
+                <div class="foto">
+                    <figure>
+                        <img class="image" 
+                             src="images/DSC_5954.jpg" 
+                             alt="my foto">
+                    </figure>
+                    <h1>Pavel Akulovich</h1>
+                </div>
                 <h2>Contacts</h2>
                 <ul>
                     <li>Velcom: +375295595463</li>
                     <li>E-mail: pasha860@mail.ru</li>
                     <li>Discord: Pavel(@PavelAkulovich)</li>
                 </ul>
-            </figure>
-        </header>
+            </aside>
+    
+            <main class="main-1">
+                <section class="section-1">
+                    <h2>About Me</h2>
+                    <p class="about-me">I'm 34. In my life I tried different professions. A teacher, a seller, 
+                        a wholesale manager for the last 8 years. I want to try something new. The IT sphere is 
+                        interesting and multifaceted. I want to become a successful Front-end developer in the future.</p>
+                </section>
+                
+                <section class="section-1">
+                    <h2>Code Example</h2>
+                    <pre><code>function getMiddle(s)
+                        {
+                          let mid = Math.ceil(s.length / 2)
+                          if (s.length % 2 ===0) return `${s[mid-1]}${s[mid]}`
+                          if (s.length % 2 !== 0 ) return s[mid-1]
+                        }</code>
+                        </pre>
+                    
+                </section>
+    
+                <section class="section-1">
+                    <h2>Projects</h2>
+                    <!-- ddd  -->   
+                </section>
+                <section class="section-1">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>HTML,CSS</li>
+                        <li>SQL,MySQL</li>
+                    </ul>
+    
+                </section>
 
-        <main class="main-1">
-            <section class="section-1">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Git</li>
-                    <li>HTML,CSS</li>
-                    <li>SQL,MySQL</li>
-                </ul>
-            </section>
-            <section class="section-1">
-                <h2>Code Example</h2>
-                <code>const count = animals.push(‘cows’); console.log(count); // expected output: 4 console.log(animals);
-                </code>
-            </section>
-            <section class="section-1">
-                <h2>Education</h2>
-                <ul>
-                    <li>2021 – now Rolling Scopes School Javascript/Front-end Developer</li>
-                    <li>2003 - 2008 Belarusian State Pedagogical University Teacher</li>
-                </ul>
-                <h3>Courses</h3>
-                <ul>
-                    <li>Computer Science Basics. lern.epam.com</li>
-                    <li>Database.The basics. IT-Academy.by</li>
-                </ul>
+    
+                <section class="section-1">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>2021 – now Rolling Scopes School Javascript/Front-end Developer</li>
+                        <li>2003 - 2008 Belarusian State Pedagogical University Teacher</li>
+                    </ul>
+                    <h3>Courses</h3>
+                    <ul>
+                        <li>Computer Science Basics. lern.epam.com</li>
+                        <li>Database.The basics. IT-Academy.by</li>
+                    </ul>
+                </section>
+    
+                <section class="section-1">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English (A2)</li>
+                        <li>German (A1)</li>
+                    </ul>
+                </section>
+            </main>
+    
 
-            </section>
-            <section class="section-1">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English (A2)</li>
-                    <li>German (A1)</li>
-                </ul>
-            </section>
-        </main>
+        </div>
 
         <footer class="footer-1">
             <ul>

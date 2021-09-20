@@ -1,15 +1,39 @@
 .centr {
-    background-color: #b0c4de;
-    padding: 20px;
+    padding: 0px;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1440px;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.head-1 {
+.ul-menu {
     background-color: #008b8b;
-    padding: 0;
-    width: 960px;
-    height: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.menu-item {
+    text-decoration: none;
+    font: italic bold 24px Arial;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: chocolate;
+    transition: 0.5s;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content {
+    display: flex;
 }
 
 .about-me {
@@ -19,22 +43,43 @@
 .image {
     border-radius: 10%;
     border: 0.2rem solid ;
-    margin-right: 20px;
-    height: 200px;
-    float: left;
+    margin: 10px;
+    max-width: 100%;
+    
    
   }
   
-  .h1-1 {
+  h1 {
+      font-size: 2em;
       text-align: center;
   }
 
+  h2,
+  h3 {
+      text-align: left;
+      border-bottom: #008b8b solid 2px;
+  }
+
+  .aside {
+      background-color: darkgrey;
+      padding-right: 20px;
+      width: 30%;
+  }
+
+  .foto {
+      display: flex;
+      flex-direction: column;
+  }
+
+
   .section-1 {
-      border-bottom: #008b8b solid 3px;
+      margin-top: 60px;
+      
   }
 
   .main-1 {
       padding: 10px;
+      width: 65%;
   }
 
   .footer-1 {
