@@ -1,106 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>My CV</title>
 
+    <title>My CV</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
-    <div class="centr">
-        <header class="head">
-            <nav class="menu">
-                <ul class="ul-menu">
-                    <li><a class="menu-item" href="#Contacts">Contacts</a></li>
-                    <li><a class="menu-item" href="#Code">Code Example</a></li>
-                    <li><a class="menu-item" href="#Projects">Projects</a></li>
-                    <li><a class="menu-item" href="#Skills">Skills</a></li>
-                    <li><a class="menu-item" href="#Education">Education</a></li>
-                    <li><a class="menu-item" href="#Languages">Languages</a></li>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__menu">
+                <ul class="header__ul">
+                    <li><a class="header__item" href="#Contacts">Contacts</a></li>
+                    <li><a class="header__item" href="#Code">Code Example</a></li>
+                    <li><a class="header__item" href="#Projects">Projects</a></li>
+                    <li><a class="header__item" href="#Skills">Skills</a></li>
+                    <li><a class="header__item" href="#Education">Education</a></li>
+                    <li><a class="header__item" href="#Languages">Languages</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="content">
             <aside class="aside">
-                <div class="foto">
+                <div class="aside__foto">
                     <figure>
-                        <img class="image" 
-                             src="images/DSC_5954.jpg" 
-                             alt="my foto">
+                        <img class="aside__image" src="images/DSC00582.jpg" alt="my foto">
                     </figure>
                     <h1>Pavel Akulovich</h1>
                 </div>
                 <h2 id='Contacts'>Contacts</h2>
                 <ul>
-                    <li>Velcom: +375295595463</li>
-                    <li>E-mail: pasha860@mail.ru</li>
-                    <li>Discord: pavel#1156</li>
+                    <li><span class="material-icons-outlined">
+                            location_city
+                        </span>Minsk, Belarus
+                    </li>
+                    <li><span class="material-icons-outlined">
+                            phone_iphone
+                        </span><a href="tel:+375295595463">+375295595463</a>
+                    </li>
+                    <li><span class="material-icons-outlined">
+                            mail
+                        </span><a href="mailto:pasha860@mail.ru">pasha860@mail.ru</a>
+                    </li>
+                    <li><img class="discort-image" src="./images/logo-discord.svg" alt="discord-logo">pavel#1156
+                    </li>
+                    <a class="footer__item" href="https://github.com/PavelAkulovich" target="blank">
+                        <img class="discort-image" src="./images/octocat.svg" alt="image" height="25">
+                        Github
+                    </a>
+                </ul>
+                <h2 id="Skills">Skills</h2>
+                <ul>
+                    <h4>Hard</h4>
+                    <li>HTML5</li>
+                    <li>CSS (Saas,Flex,Grid,BEM)</li>
+                    <li>Git,GitHub</li>
+                    <li>Figma</li>
+                    <li>JavaScript ES6</li>
+                    <li>React(in the process)</li>
+                    <h4>Soft</h4>
+                    <li>Communicative</li>
+                    <li>Teamwork</li>
+                    <li>Problem solving</li>
+                    <li>Quick learning skills</li>
+                    <li>Willingness to learn</li>
                 </ul>
             </aside>
-    
-            <main class="main-1">
-                <section class="section-1">
+
+            <main class="main">
+                <section class="section">
                     <h2>About Me</h2>
-                    <p class="about-me">Hello! I am Pavel. I have tried different professions: a teacher, a shop assistant, and a sales manager. Now I am looking for something new. I am curious and hardworking. I am ready to learn and develop quickly. IT provides many opportunities and I have found the one that appeals to me. I hope to become a successful front-end developer.</p>
+                    <p class="main__about">Hello! I am Pavel. I have tried different professions: a teacher, a shop
+                        assistant, and a sales manager. Now I am looking for something new. I am curious and
+                        hardworking. I am ready to learn and develop quickly. IT provides many opportunities and I
+                        have
+                        found the one that appeals to me. I hope to become a successful front-end developer.</p>
                 </section>
-                
-                <section class="section-1">
+
+                <section class="section">
                     <h2 id="Code">Code Example</h2>
                     <pre><code>function getMiddle(s)
                         {
                           let mid = Math.ceil(s.length / 2)
-                          if (s.length % 2 ===0) return `${s[mid-1]}${s[mid]}`
-                          if (s.length % 2 !== 0 ) return s[mid-1]
+                          return s.length % 2 === 0 ? `${s[mid-1]}${s[mid]}` : s[mid-1]
                         }</code>
                         </pre>
-                    
+                    <a href="https://www.codewars.com/users/PavelAkulovich" target="_blank">
+                        <img src="https://www.codewars.com/users/PavelAkulovich/badges/large" alt="codewars">
+                    </a>
+
+
                 </section>
-    
-                <section class="section-1">
+
+                <section class="section">
                     <h2 id="Projects">Projects</h2>
                     <div class="projects">
-                        <a href="https://rolling-scopes-school.github.io/pavelakulovich-JSFE2021Q3/museum-dom/" target="blank">
+                        <a href="https://rolling-scopes-school.github.io/pavelakulovich-JSFE2021Q3/museum-dom/"
+                            target="blank">
                             <figure class="project">
-                                <img class="img" src="images/louvre.png" alt="foto"  width="320">
+                                <img class="img" src="images/louvre.png" alt="foto" width="320">
                                 <figcaption>My first project.<br>Technologies: HTML,CSS,DomEvent.</figcaption>
                             </figure>
                         </a>
-                        <a href="https://rolling-scopes-school.github.io/pavelakulovich-JSFE2021Q3/momentum/" target="blank">
-                            <figure class="project">
-                                <img class="img" src="images/Momentum.png" alt="foto"  width="320">
-                                <figcaption>Momentum is an analogue of the Chrome Web Store application.<br>Technologies: HTML,CSS,DomEvent,Async/await,localStorage,APIs.</figcaption>
+                        <a href="https://rolling-scopes-school.github.io/pavelakulovich-JSFE2021Q3/momentum/"
+                            target="blank">
+                            <figure>
+                                <img class="img" src="images/Momentum.png" alt="foto" width="320">
+                                <figcaption>Momentum is an analogue of the Chrome Web Store
+                                    application.<br>Technologies: HTML,CSS,DomEvent,Async/await,localStorage,APIs.
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="https://pavelakulovich.github.io/cssMemSlider/" target="blank">
                             <figure class="project">
-                                <img class="img" src="images/CssMemSlider.png" alt="foto"  width="320">
-                                <figcaption>Slider without using scripts.<br>Technologies: Only CSS,only Fan.</figcaption>
+                                <img class="img" src="images/CssMemSlider.png" alt="foto" width="320">
+                                <figcaption>Slider without using scripts.<br>Technologies: Only CSS,only Fan.
+                                </figcaption>
                             </figure>
                         </a>
                     </div>
                 </section>
 
-                <section class="section-1">
-                    <h2 id="Skills">Skills</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>HTML,CSS</li>
-                        <li>SQL,MySQL</li>
-                        <li>JavaScript</li>
-                    </ul>
-    
-                </section>
-
-    
-                <section class="section-1">
+                <section class="section">
                     <h2 id="Education">Education</h2>
                     <ul>
                         <li>2021 – now Rolling Scopes School Javascript/Front-end Development</li>
@@ -110,10 +143,11 @@
                     <ul>
                         <li>Computer Science Basics. lern.epam.com</li>
                         <li>Database.The basics. IT-Academy.by</li>
+                        <li>Js-basics. ru.hexlet.io</li>
                     </ul>
                 </section>
-    
-                <section class="section-1">
+
+                <section class="section">
                     <h2 id="Languages">Languages</h2>
                     <ul>
                         <li>English (A2)</li>
@@ -121,35 +155,26 @@
                     </ul>
                 </section>
             </main>
-    
+
 
         </div>
 
-        <footer class="footer-1">
-            <ul class="ul-footer">
+        <footer class="footer">
+            <ul class="footer__list">
                 <li>
-                    <a class="footer-a" href="https://github.com/PavelAkulovich" target="blank">
-                    <img
-                    src="./images/octocat.svg"
-                    alt="image"
-                    height="25">
-                    Github
-                    </a>    
+                    <a class="footer__item" href="https://github.com/PavelAkulovich" target="blank">
+                        <img src="./images/octocat.svg" alt="image" height="25">
+                        Github
+                    </a>
                 </li>
-                <li><a class="footer-a" href="https://rs.school/js/" target="blank">
-                    <img
-                    src="./images/rs_school_js.svg"
-                    alt="image"
-                    height="25">
-                    RSschool
-                    </a>   
-                </li>
+
                 <li>
-                    <time datetime="2021-09-20">2021</time>
+                    <time datetime="2021-09-20">2022</time>
                 </li>
             </ul>
         </footer>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
